@@ -14,7 +14,7 @@
     grid-template-areas: 
     "he"
     "na"
-    "se"
+    "op"
     "fo"
     
     ;
@@ -41,6 +41,7 @@ nav{
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 15px;
 }
 
 #ElgIkon:hover{
@@ -50,7 +51,7 @@ nav{
 }   
 
 #rubrik{
-    margin-right: 550px;
+    margin-right:calc(50% - 100px);
     align-self: center;
     color: white;
     font-size: 2.5rem;
@@ -65,17 +66,33 @@ header{
 }
 
 footer{
-    background-color: rgb(33, 33, 33);
-    grid-area:"fo"
+    background-color: rgb(4, 23, 10);
+    grid-area:"fo";
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 section{
-    grid-area: "se";
     background-color: rgb(255, 255, 255);
 }
 
 h1{
     
+}
+
+.footerlinks{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    margin-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footerlinks:hover{
+    font-weight: bold;
+    font-size: 1.22rem;
 }
 
 .nav_links{
@@ -88,7 +105,6 @@ h1{
 .nav_links:hover{
     font-size: 1.6rem;
     font-weight: bold;
-    border: solid black;
     border-radius: 1%;
     
 }
@@ -97,9 +113,9 @@ h1{
     background-image: url(../img/oppetider_bakgrund.jpg);
     display: flex;
     flex-direction: column;
-    
     flex-wrap: wrap;
     margin-top: 85px;
+    grid-area: "op";
     
     
     
@@ -153,8 +169,6 @@ h1{
 
 .li_tider{
     font-size: 1.8rem;
-
-
 }
 
 li{
@@ -167,7 +181,6 @@ li{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 }
 
 #MenyBody{
