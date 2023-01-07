@@ -97,7 +97,7 @@ h1{
     background-image: url(../img/oppetider_bakgrund.jpg);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     flex-wrap: wrap;
     margin-top: 85px;
     
@@ -105,12 +105,69 @@ h1{
     
 }
 
-#oppetider_text{
+#oppetider_mellanrubrik{
     font-size: 1.2rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
+}
+
+.oppetider_text{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#oppetider_rubrik{
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
 
 
+}
+
+#blankspace{
+    grid-area: "bl";
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#oppetider_grid{
+    display: grid;
+    height: 300px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+
+}
+
+#veckodagar{
+    grid-area: "ve";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.li_veckodagar{
+    color: crimson;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.li_tider{
+    font-size: 1.8rem;
+
+
+}
+
+li{
+    margin-bottom: 12px;
+    list-style: none;
+}
+
+#tider{
+    grid-area: "ti";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
 }
 
 #MenyBody{
