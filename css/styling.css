@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: 100%;
     height: 100vh;
-    grid-template-rows: 18% 7% 950px 10%;
+    grid-template-rows: 11% 7% 950px 10%;
     grid-template-areas: 
     "he"
     "na"
@@ -73,13 +73,71 @@ footer{
     flex-wrap: wrap;
 }
 
+#menusection{
+    display: flex;
+    background-color: rgb(32, 31, 31);
+    justify-content: center;
+    justify-content: space-around;
+    }
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    width: 350px;
+    height: 450px;
+    background-color: rgb(22, 57, 12);
+    border-radius: 5%;
+    border: 3px black solid;
+}
+
+#card1{
+    background-image: url(../img/food/Macka.jpeg);
+    background-size: 350px 360px;
+}
+
+#card2{
+    background-image: url(../img/food/KorvOchPommes.jpeg);
+    background-size:cover;
+}
+
+#card3{
+    background-image: url(../img/food/Pizza.webp);
+    background-size: 350px 450px;
+}
+
+#card4{
+    background-image: url(../img/food/Frukt.jpeg);
+    background-size: cover;
+}
+
+.card_bottompart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 90px;
+    border: 3px solid black;
+    background-color: crimson;
+}
+
+.dish_name{
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+.pricetag{
+    margin-top: 5px;
+    font-family:'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
 section{
     background-color: rgb(255, 255, 255);
 }
 
-h1{
-    
-}
 
 .footerlinks{
     text-decoration: none;
