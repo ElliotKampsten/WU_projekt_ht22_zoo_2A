@@ -26,9 +26,6 @@ nav{
     grid-area:na;
     align-items: center;
     justify-content: space-evenly;
-    
-    
-    
 }
 
 #ElgIkon{
@@ -319,4 +316,9 @@ li{
 
 }
 
+#WhiteMooseIcon{
+    width: 100px;
+    height: 100px;
+    align-self: center;
+}
 
