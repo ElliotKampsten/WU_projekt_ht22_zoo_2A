@@ -4,7 +4,6 @@
     margin: 0px;
 }
 
-/* Gör ikon i canva, leta upp bild på älg skalle eller ta från animals mapp*/
 
 #gridwrapper{
     display: grid;
@@ -24,9 +23,11 @@
 nav{
     display: flex;
     background-color: rgb(11, 115, 41);
-    grid-area:"na";
+    grid-area:na;
     align-items: center;
     justify-content: space-evenly;
+    
+    
     
 }
 
@@ -61,16 +62,17 @@ nav{
 header{
     display: flex;
     flex-direction: row;
-    grid-area:"he";
+    grid-area: he;
     background-color: rgb(4, 73, 23);
 }
 
 footer{
     background-color: rgb(4, 23, 10);
-    grid-area:"fo";
+    grid-area:fo;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 #menusection{
@@ -78,6 +80,7 @@ footer{
     background-color: rgb(32, 31, 31);
     justify-content: center;
     justify-content: space-around;
+    align-items: center;
     }
 
 .card{
@@ -146,11 +149,13 @@ section{
     margin-left: 15px;
     margin-top: auto;
     margin-bottom: auto;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .footerlinks:hover{
     font-weight: bold;
-    font-size: 1.22rem;
+    font-size: 1.23rem;
 }
 
 .nav_links{
@@ -248,4 +253,70 @@ li{
 #OmOssBody{
     background-color: red;
 }
+
+#djurgrid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 11% 7% 1fr 1fr 10%;
+    grid-template-areas: 
+    "he he"
+    "na na"
+    "dj te"
+    "hi te "
+    "fo fo"
+    ;
+    
+}
+
+#djursection{
+    display: flex;
+    background-color:rgb(3, 16, 7);
+    grid-area: dj;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#textsection{
+    display: flex;
+    background-image: url(../../img/compasspicture.jpg);
+    background-size: 100% 100%;
+   
+    grid-area: te;
+
+}
+
+#Älg2{
+    width: 400px;
+    height: 250px;
+    
+
+}
+
+#Älg3{
+    width: 400px;
+    height: 250px;
+    
+}
+
+#HittaHitRubrik{
+  color: white;
+  
+}
+
+#HittaHitRuta{
+    grid-area: hi;
+    background-color: rgb(3, 16, 7);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+#HittaHitText{
+    color: white;
+
+}
+
 
